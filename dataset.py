@@ -12,7 +12,8 @@ def audio_converter(audio):
         return audio.astype(np.float32, order='C') / 32768.0
     else:
         # print('unimplemented audio data type conversion...')
-        return audio.astype(np.float32, order='C')
+        # return audio.astype(np.float32, order='C')
+        return audio.astype(np.float32)
 
 
 # Splits audio, each split marker determines the fraction of the total audio in that split, i.e [0.75, 0.25] will put
